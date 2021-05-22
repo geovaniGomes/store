@@ -26,7 +26,7 @@ WORKDIR /store
 #RUN python -m venv env
 
 
-# copy and install pip requirements store/src/requirements/${PIP_REQUIREMENTS}
+# copy and install pip requirements 
 COPY src/requirements/  store/src/requirements/
 
 RUN pip install -r store/src/requirements/dev.txt
